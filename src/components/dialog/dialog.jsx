@@ -90,7 +90,7 @@ export default function SimpleDialog(props) {
             <input type="text" placeholder='Date' name="date" onChange={handleChange} />
             <input type="text" placeholder='Phone Number' name="phonenumber" onChange={handleChange} />
             <input type="text" placeholder='Travel Destination' name="traveldestination" onChange={handleChange} />
-            {/* <input type="text" placeholder='Vacation type' /> */}
+            <input type="text" placeholder='Vacation type' />
 
           </div>
           <div className="buttontag">
