@@ -1,0 +1,210 @@
+.ddd {
+    // margin-top: 20px;
+    // display: flex;
+    // // justify-content: space-around;
+    // // align-items: center;
+    //
+    // padding: 0 100px;
+    //   background-image: url("https://muralsyourway.vtexassets.com/arquivos/ids/239459/Kool-Aid-Lake-Hikers-WA-Wallpaper-Mural.jpg?v=638164554435270000");
+    // background-image: url("https://as1.ftcdn.net/v2/jpg/05/70/99/46/1000_F_570994690_nnfsYaQIWeIGfmpCRTSS2m99D83WpTOV.jpg");
+    // background-image: url("https://i.pinimg.com/originals/5c/fa/d6/5cfad62fb4fb8696f9b9426e7a1b91fb.jpg");
+    // background-image: url("https://images5.alphacoders.com/103/1037819.jpg");
+
+
+
+    .nav {
+        margin-top: 0px;
+        display: flex;
+        background-image: url("https://i.pinimg.com/originals/5c/fa/d6/5cfad62fb4fb8696f9b9426e7a1b91fb.jpg");
+        background-size: cover;
+        height: 60vh;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .navlift {
+            display: flex;
+            justify-content: center;
+
+            padding-left: 20 40px;
+
+            h1 {
+                color: aliceblue;
+                // margin-top: 90px;
+            }
+
+
+
+        }
+
+        .button-div {
+            //  display: flex;
+            //  justify-content: left;
+            //  width: 150px;
+            //  padding-left: 35px;
+            margin-bottom: 90px;
+            padding-left: 100px;
+
+
+
+            button {
+                height: 30px;
+                border-radius: 35px;
+                font-weight: 500;
+                background-color: white;
+
+            }
+        }
+    }
+
+
+
+
+    .tour {
+        display: flex;
+        font-style: italic;
+        justify-content: center;
+
+
+
+
+        .left {
+
+
+            h3 {
+                margin-top: 20px;
+                display: flex;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+    .places {
+        margin: 0;
+        // display: flex;
+        justify-content: space-between;
+        // align-items: center; 
+
+
+        .row {
+            margin: 0;
+            padding-left: 15px;
+
+            p {
+                // text-align: center;
+                font-style: italic;
+                font-weight: 700;
+
+
+
+            }
+        }
+
+        .plname {
+            margin: 0.9px;
+            display: flex;
+            justify-content: space-around;
+
+            p {
+                // background-color: antiquewhite;
+                padding: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .photo {
+        background-color: black;
+
+    }
+
+
+
+
+    .card-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ch1 {
+            display: flex;
+        }
+    }
+
+    .paper_main {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+
+        .paper {
+            cursor: pointer;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .details {
+                padding: 15px;
+
+                span {
+                    font-size: .975rem;
+                    color: #78006E;
+                }
+
+                div {
+                    color: #212529;
+                    height: 52px;
+                    font-weight: 600;
+                    font-size: 1.125rem;
+                }
+
+                P {
+                    margin: 0;
+                    color: #6B7280;
+                }
+
+                #amount {
+                    color: #212529;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+
+                #button {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 32px;
+                    height: 24px;
+
+                    p {
+                        color: #78006E;
+                        font-size: .975rem;
+                    }
+
+                    #arrow {
+                        color: #78006E;
+                        height: .975rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+// img {
+
+//     // height: 300px;
+//     width: 500px;
+//     transition: 0.5s;
+
+// }
+
+// img:hover {
+//     width: 520px;
+// }

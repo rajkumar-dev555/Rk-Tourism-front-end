@@ -1,0 +1,99 @@
+.payment {
+    position: relative;
+    // background-color: aliceblue;
+
+
+    .div {
+        background-color: aliceblue;
+
+    }
+
+    .content {
+        // margin-top: 25px;
+        // background-color: aqua;
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo {
+        margin-top: 20px;
+        // height: 250px;
+        // width: 350px;
+        padding: 0 60px;
+
+        h4 {
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+
+
+        img {
+            margin-top: 15px;
+            width: 350px;
+            height: 250px;
+        }
+
+        p {
+            margin-top: 15px;
+            font-weight: 400;
+            width: 50%;
+        }
+    }
+
+    .booknow {
+
+        // display: flex;
+        // justify-content: right;
+        position: absolute;
+        height: 150px;
+        // padding-right: 50px;
+        top: 20vh;
+        right: 10vw;
+        // margin-top: 10px;
+
+
+
+        .paper {
+            background-color: aliceblue;
+            cursor: pointer;
+            width: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+
+            .details {
+                gap: 0.5;
+                align-items: center;
+
+                p {
+                    color: black;
+                }
+
+                span {
+                    font-weight: 500;
+                }
+            }
+
+            .pay {
+                display: flex;
+                align-items: center;
+                padding-right: 10px;
+
+                button {
+                    border-radius: 10px;
+                    background-color: rgb(28, 7, 255);
+                    color: white;
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}

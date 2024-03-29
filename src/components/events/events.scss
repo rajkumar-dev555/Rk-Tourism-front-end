@@ -1,0 +1,50 @@
+.event {
+    padding-left: 55px;
+
+    .div {
+        margin-top: 15px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto auto;
+        gap: 40px;
+
+
+        .eve{
+
+               
+            margin-top: 15px;
+            
+            img {
+                width: 150px;
+                // height: 45%;
+                border-radius: 15px;
+                height: 180px;
+                
+            }
+            img:hover{
+               transform: scale(1.2);
+            }
+            p {
+                margin: 0;
+                font-weight: 200;
+                text-align: center;
+            }
+
+            .off {
+                
+                font-weight: 600;
+            }
+
+            span {
+                // background-color: rgb(229, 56, 245);
+                // color: white;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+               
+            }
+        }
+    }
+
+
+}

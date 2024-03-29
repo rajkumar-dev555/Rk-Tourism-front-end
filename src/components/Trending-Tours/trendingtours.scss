@@ -1,0 +1,63 @@
+.tour{
+    padding-left: 45px;
+
+    // .trend-pack{
+    //     margin-top: 15px;
+    //     display: grid;
+    //     justify-content: center;
+    //     grid-template-columns: auto auto auto auto auto auto;
+
+    //     .popular-pack{
+
+    //         margin-top: 15px;
+
+    //         img{
+                
+    //             width: 150px;
+    //             // height: 45%;
+    //             border-radius: 15px;
+    //             height: 180px;
+    //         }
+    //     }
+    // }
+
+
+    .paperlayout{
+        display: grid;
+        justify-content: center;
+        grid-template-columns:auto auto auto auto auto;
+        gap: 40px;
+
+        .papers{
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img:hover{
+                transform: scale(0.9);
+            }
+            .infor{
+              
+              p{
+                padding-left: 3px;
+                gap: 12px;
+                text-align:left;
+              }
+              a{
+                padding-left: 3px;
+                text-align: center;
+                color: rgb(44, 42, 42);
+                font-weight: 600;
+              }
+              .day{
+            //    padding: 20px;
+                margin-top: 15px;
+                padding-left: 3px;
+              }
+                
+            }
+            
+        }
+
+    }
+}

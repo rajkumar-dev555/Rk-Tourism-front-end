@@ -1,0 +1,63 @@
+.navbar {
+    height: 10vh;
+    // background-image: url("https://cutewallpaper.org/27/black-and-orange-desktop-wallpaper/408817798.jpg");
+    // background-color: rgba(255, 255, 255, 0.518);
+    // background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+
+    //  #div-pic{
+
+    //  }     
+    .div-img {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            width: 20%;
+        }
+    }
+
+    // h3 {
+    //     color: rgb(0, 0, 0);
+
+    //     /* margin: 0; */
+    // }
+
+    .navbar-list {
+
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+        padding-right: 30px;
+        width: 50vw;
+
+
+
+        p {
+            color: rgb(8, 8, 8);
+            // font-weight: 900;
+            height: 10;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        p:hover {
+            color: rgba(228, 71, 207, 0.83);
+        }
+
+    }
+
+    // .navbar-list:hover.p{
+
+    //            background-color: aqua;
+    // }
+
+
+
+}

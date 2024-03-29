@@ -1,0 +1,80 @@
+.packs {
+
+
+    h4 {
+        margin-top: 30px;
+        color: black;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .holiday_img {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        padding: 0 100px;
+        gap: 100px;
+
+        img {
+            border-radius: 15px;
+            height: 300px;
+
+        }
+
+        .img-des {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                display: flex;
+                justify-content: right;
+                padding-right: 95px;
+
+            }
+
+            h4 {
+                font-weight: 100;
+            }
+        }
+
+    }
+    .holiday1_img {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        padding: 0 100px;
+        gap: 100px;
+        margin-top: 40px;
+
+        img {
+            border-radius: 15px;
+            height: 300px;
+            width: 300px;
+
+        }
+
+        .img-des2 {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                display: flex;
+                justify-content: left;
+                padding-right: 95px;
+
+            }
+
+            h4 {
+                font-weight: 100;
+            }
+        }
+    }
+
+
+}

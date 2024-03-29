@@ -1,0 +1,78 @@
+.register {
+    display: flex;
+
+    // background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    // padding-left: 650px;
+    height: 550px;
+    width: 400px;
+    position: relative;
+
+     .reg{
+         
+        position: absolute;
+        top: 5%;
+        // background-color: rgb(47, 47, 251);
+     }
+            
+    .inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        // background-image: url("https://img.freepik.com/premium-photo/night-landscape-dark-forest-river_960782-1369.jpg");
+        // background-color: antiquewhite;
+        padding: 40px;
+        border: solid 1px rgb(253, 251, 251);
+        border-radius: 15px;
+
+
+        //  align-items: ;
+        button {
+            width: 75%;
+            border-radius: 10px;
+            color: rgb(249, 244, 244);
+            background-color: black;
+
+        }
+
+
+        .aaaa {
+            p {
+                margin: 0;
+                color: aliceblue;
+            }
+        }
+
+        .signIn {
+            width: 100%;
+            border-radius: 10px;
+            color: rgb(249, 244, 244);
+            background-color: black;
+        }
+
+        .genders {
+            span {
+                color: rgb(0, 2, 4);
+               
+               
+            }
+        }
+
+        h3 {
+            color: rgb(0, 0, 0);
+            // background-color: rgb(51, 0, 255);
+        }
+
+        input {
+            // width: 140%;
+            border-radius: 7px;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,56 @@
+.div {
+
+
+    // background-image: url("https://images3.alphacoders.com/133/1337500.png");
+    // background: url("https://wallpapers.com/images/featured/beach-eoxvk1itsaibfbo1.jpg");
+
+    .div1 {
+
+        background-image: url("https://wallpapers.com/images/hd/hd-desktop-mountain-alps-ql04s4uhc7qj8wd9.webp");
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    display: flex;
+    flex-direction: column;
+    // gap: 200px;
+    // height: 450px;
+
+    #home_h4 {
+
+        text-align: center;
+        margin-top: 105px;
+        font-weight: 500;
+        font-size: xx-large;
+        color: rgb(15, 15, 173);
+        font-style: italic;
+        font-family: "Sofia", sans-serif;
+
+    }
+
+    button {
+
+        height: 35px;
+    }
+
+    .pack {
+        margin-top: 30px;
+
+        h4 {
+            color: black;
+        }
+    }
+
+
+
+
+}
+
+.hero {
+    background-color: transparent;
+    // opacity: 0.6;
+
+
+}

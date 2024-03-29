@@ -1,0 +1,38 @@
+.foot{
+    margin-top: 50px;
+    background-color: rgb(72, 4, 59);
+    // height: 30vh;
+    padding: 15px;
+    // gap: 60px;
+    
+
+
+    h4{
+        color: rgb(255, 255, 255);text-align: center;
+    }
+
+    .details{
+        padding-left: 25px;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+
+        .foot-des{
+            color: aliceblue;
+
+        }
+        .foot1{
+           color: white;
+        }
+        .foot2{
+            color: white;
+        }
+        .foot3{
+            color: white;
+        }
+        .foot4{
+            color: white;
+        }
+    }
+}
