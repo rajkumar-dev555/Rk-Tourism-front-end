@@ -9,7 +9,7 @@ import "./loginpage.scss"
 import axios from 'axios';
 
 export const Loginpage = (props) => {
-    const[submitted,setSubmitted] = useState(false)
+    const [submitted, setSubmitted] = useState(false)
     const navigate = useNavigate()
     const [signup, setSignup] = useState({
         email: "",
@@ -35,7 +35,7 @@ export const Loginpage = (props) => {
         // console.log(response.data)
     }
 
-    
+
     return (
         <div className="loginpage">
             {/* <Dialog className='login_dialog'> */}
@@ -60,7 +60,7 @@ export const Loginpage = (props) => {
                             || (!submitted && 'Submit')
                         }
                     </button> */}
-                    <ValidatorForm>
+                    <ValidatorForm className="valit">
                         <TextValidator
                             label="Email"
                             onChange={handleChange}

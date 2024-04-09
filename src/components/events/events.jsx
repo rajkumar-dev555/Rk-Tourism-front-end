@@ -5,8 +5,29 @@ import pic3 from "../img/netherlands.jpg"
 import "./events.scss"
 // import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 export const Events = () => {
+
+ const [packageinformaction, setpackageinformaction]=useState({});
+
+   useEffect(()=>{
+    fetchData();
+
+   }, [])
+
+   const fetchData = async () =>{
+    try{
+        const response = await axios.get("http://localhost:3001/packageid/{id}");
+        console.log(response.data);
+        setpackageinformaction(...response.data)
+    } catch (errors) {
+        console.error();
+    }
+   }
+
+
     const offersData = [
         {
             image: pic,

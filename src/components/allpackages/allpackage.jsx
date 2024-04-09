@@ -103,6 +103,10 @@ export const Allpackage = () => {
                             <input type="checkbox" />
                             <span>Tours & Attractions</span>
                         </div>
+                        <div className="box2">
+                            <input type="checkbox" />
+                            <span>Summer Vacation</span>
+                        </div>
 
 
                     </div>

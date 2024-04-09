@@ -94,10 +94,10 @@ export const Form = (props) => {
                 <input type="text" placeholder="email" name="email" onChange={handleChange} />
                 <input type="text" placeholder="number" name="phonenumber" onChange={handleChange} />
                 <input type="text" placeholder="password" name="password" onChange={handleChange} />
-                <div className="genders">
+                {/* <div className="genders">
                     <input type="radio" placeholder="male" /><span>male</span>
                     <input type="radio" placeholder="male" /><span>female</span>
-                </div>
+                </div> */}
                 <button onClick={handleSumbit}>register</button>
                 <div className="aaaa">
                     <p>or</p>

@@ -16,6 +16,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Fade from '@mui/material/Fade';
+import axios from "axios";
 
 export const Offer = () => {
 
@@ -35,6 +36,23 @@ export const Offer = () => {
   const handleClose = (value) => {
     setOpen(false);
   };
+
+  const [packdetails, setPackdetails] = useState({});
+
+    useEffect(()=> {
+     fetchData();
+    }, [])
+
+    const fetchData= async () =>{
+
+      try{
+        const response = await axios.get("http://localhost:3001/atp");
+        console.log(response.data)
+        setPackdetails(...response.data)
+      } catch (error) {
+        console.error();
+      }
+    }
 
   const data = [
     {
@@ -90,15 +108,15 @@ export const Offer = () => {
      </div>
 
       <div className="pic">
-        <h3>{myData.title}</h3>
+        <h3>{packdetails.title}</h3>
 
         <div className="image">
-          <img src={myData.import} alt="" />
+          <img src={packdetails.import} alt="" />
           {/* <img src={pic1} alt="" /> */}
 
         </div>
         <h3>Overview</h3>
-        <p id="content">{myData.content}</p> 
+        <p id="content">{packdetails.content}</p> 
         <div className="infor">
           <h5>More Details</h5>
           <div className="inputs">

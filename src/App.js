@@ -15,6 +15,7 @@ import Allpackage from './components/allpackages/allpackage.jsx';
 import Offer from './components/offers/offers.jsx';
 import Loginpage from './components/loginpage/loginpage.jsx';
 import IndiaPackages from './components/india-pack/india-pack.jsx';
+import Southindiantours from './components/south-indian-tours/south-india-tours.jsx';
 function App() {
 
    const route = createBrowserRouter([
@@ -49,7 +50,14 @@ function App() {
     {
       path: "/indiapackages",
       element: <IndiaPackages/>
+    },
+    {
+      path:"/southindianpackages",
+      element: <Southindiantours/>
+
     }
+
+
     
 
 

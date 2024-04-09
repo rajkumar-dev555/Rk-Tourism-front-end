@@ -37,12 +37,16 @@ export default function SimpleDialog(props) {
     setPayment({ ...payment, [name]: value })
   }
 
+
+
   const handleSumbit = async () => {
     // console.log(payment);
 
     // const response = await axios.post("http://localhost:3001/bn", payment)
 
     // console.log(response.data);
+
+      
 
 
     const options = {
@@ -77,7 +81,7 @@ export default function SimpleDialog(props) {
   return (
     <Dialog className='payment_dialog' onClose={handleClose} open={open} >
       <div className="div">
-        <ClearIcon />
+        <ClearIcon  onClick={handleClose} />
         <div className="pay-title">
           <DialogTitle className='title'>Payment</DialogTitle>
         </div>
@@ -94,7 +98,10 @@ export default function SimpleDialog(props) {
 
           </div>
           <div className="buttontag">
-            <button onClick={handleSumbit}>Book Now</button>
+            <button onClick={handleSumbit}>Submit Now</button>
+            <div className="pay">
+              <button>Pay Now</button>
+            </div>
           </div>
         </div>
 

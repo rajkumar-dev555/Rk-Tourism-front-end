@@ -116,6 +116,7 @@ export const Payment = () => {
                     <div className="pay">
                         <button onClick={handleClickOpen}>Book Now</button>
                     </div>
+                    
 
                 </Paper>
 

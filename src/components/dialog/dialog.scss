@@ -19,11 +19,11 @@
         // justify-content: center;
         flex-direction: column;
         background-color: white;
-        height: 650px;
+        height: 690px;
         width: 400px;
 
         .detailes {
-            margin-top: 50px;
+            margin-top: 40px;
 
             .inputs {
 
@@ -46,7 +46,7 @@
             }
 
             .buttontag {
-                margin-top: 40px;
+                margin-top: 20px;
                 text-align: center;
                 border-color: black;
 
@@ -55,6 +55,10 @@
                     border-radius: 15px;
                     color: rgb(1, 1, 1);
                     background-color: rgb(155, 171, 251);
+                }
+                .pay{
+                    text-align: center;
+                    margin-top: 10px;
                 }
             }
         }
