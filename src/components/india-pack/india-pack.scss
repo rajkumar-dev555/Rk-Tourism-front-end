@@ -15,61 +15,98 @@
 
     }
 
-    .indiancontent {
-        padding: 20px 10px;
+    .indian-lay {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: auto auto auto;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-        //    padding-top: 70px;
-        //    padding: 0 40px;  
+        gap: 15px;
+        padding-top: 30px;
 
-
-        .indian-lay {
-            width: 400px;
-            height: 400px;
+        .indian-tours {
             position: relative;
-            display: flex;
-            justify-content: center;
-            overflow: hidden;
-            padding-left: 70px;
-            // gap: 4px;
+            text-align: center;
 
-
-            .img {
-                height: 100%;
-                width: 100%;
+            img {
+                position: relative;
                 border-radius: 5px;
-                
             }
 
             h3 {
                 position: absolute;
                 top: 40%;
-                left: 25%;
-                color: rgb(0, 0, 0);
-                font-weight: 500;
+                left: 20%;
+                color: rgb(255, 255, 255);
             }
 
-            .button-tag {
-                position: absolute;
-                top: 50%;
-                left: 35%;
+            .buttons {
 
+               
                 button {
-                    color: rgb(4, 4, 4);
+                    position: absolute;
+                    top: 50%;
+                    left: 38%;
+                    color: rgb(10, 10, 10);
                     background-color: yellow;
-                    border-color: rgb(235, 238, 9);
-                    font-weight: 500;
                 }
             }
         }
-
-        .indian-lay:first-child {
-            grid-column: span 2;
-            width: 90%;
-        }
     }
+
+    // .indiancontent {
+    //     padding: 20px 10px;
+    //     display: grid;
+    //     grid-template-columns: repeat(3, 1fr);
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 10px;
+    //     //    padding-top: 70px;
+    //     //    padding: 0 40px;  
+
+
+    //     .indian-lay {
+    //         width: 400px;
+    //         height: 400px;
+    //         position: relative;
+    //         display: flex;
+    //         justify-content: center;
+    //         overflow: hidden;
+    //         padding-left: 70px;
+    //         // gap: 4px;
+
+
+    //         .img {
+    //             height: 100%;
+    //             width: 100%;
+    //             border-radius: 5px;
+
+    //         }
+
+    //         h3 {
+    //             position: absolute;
+    //             top: 40%;
+    //             left: 25%;
+    //             color: rgb(0, 0, 0);
+    //             font-weight: 500;
+    //         }
+
+    //         .button-tag {
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 35%;
+
+    //             button {
+    //                 color: rgb(4, 4, 4);
+    //                 background-color: yellow;
+    //                 border-color: rgb(235, 238, 9);
+    //                 font-weight: 500;
+    //             }
+    //         }
+    //     }
+
+    //     .indian-lay:first-child {
+    //         grid-column: span 2;
+    //         width: 90%;
+    //     }
+    // }
 
 }
