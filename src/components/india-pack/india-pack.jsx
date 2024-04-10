@@ -7,7 +7,10 @@ import pic3 from "../img/South-India.jpg"
 import pic4 from "../img/East-India.jpg"
 
 
+import pic5 from "../img/Agra-tajmahal.jpg"
+
 import "./india-pack.scss"
+import { Paper } from "@mui/material"
 import Footer from "../footer/footer"
 // import { Tour } from "@mui/icons-material"
 
@@ -56,6 +59,7 @@ export const IndiaPackages = () => {
                         </div>
 
 
+
                     </div>
                 ))}
 
@@ -67,8 +71,18 @@ export const IndiaPackages = () => {
 
                 <div className="local-layout">
 
+                    <Paper className="Local-packages">
+                        <img src={pic5} alt=""    width="100%" />
+
+                        <div className="local-informaction">
+                             <p>thaimagal</p>
+                        </div>
+
+                    </Paper>
                 </div>
             </div>
+
+
 
             <Footer />
         </div>
