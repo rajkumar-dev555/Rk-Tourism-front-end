@@ -75,7 +75,7 @@ export const IndiaPackages = () => {
                         <img src={pic5} alt=""    width="100%" />
 
                         <div className="local-informaction">
-                             <p>thaimagal</p>
+                             <p>Agra</p>
                         </div>
 
                     </Paper>
