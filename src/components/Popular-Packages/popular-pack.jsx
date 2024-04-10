@@ -14,31 +14,31 @@ export const Popularpack = () => {
         {
             image: pic,
             name: "Indian pupolur Packages",
-            tours: "150 Tours"
+            tours: "98 Tours"
 
         },
         {
             image: pic1,
             name: "International",
-            tours: "150 Tours"
+            tours: "362 Tours"
 
         },
         {
             image: pic2,
             name: "HoneyMoone Packages",
-            tours: "150 Tours"
+            tours: "17 Tours"
 
         },
         {
             image: pic3,
-            name: "International",
-            tours: "150 Tours"
+            name: "Europe Tour Packages",
+            tours: "144 Tours"
 
         },
         {
             image: pic4,
-            name: "International",
-            tours: "150 Tours"
+            name: "Educational Tour Packages",
+            tours: "15 Tours"
 
         },
        
