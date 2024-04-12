@@ -50,7 +50,7 @@ export const Offer = () => {
       console.log(response.data)
       setPackdetails(...response.data)
     } catch (error) {
-      console.error("Error fetching Data",error);
+      console.error("Error fetching Data", error);
     }
   }
 
@@ -108,77 +108,88 @@ export const Offer = () => {
       </div>
 
       <div className="pic">
-        <h3>{packdetails.title}</h3>
+        {packdetails.map((data, index) => (
 
-        <div className="image">
-          <img src={packdetails.import} alt="" />
-          {/* <img src={pic1} alt="" /> */}
+          <div className="database" elevation={3} key={index}>
 
-        </div>
-        <h3>Overview</h3>
-        <p id="content">{packdetails.content}</p>
-        <div className="infor">
-          <h5>More Details</h5>
-          {packdetails.map((data, index) => (
+            {/* {packdetails.map((data, index) => ())} */}
 
-            <div className="inputs">
-              <div className="box">
-                <Accordion
-                  expanded={expanded}
-                  onChange={handleExpansion}
-                  slots={{ transition: Fade }}
-                  slotProps={{ transition: { timeout: 400 } }}
-                  sx={{
-                    '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
-                    '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
-                  }}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1-content"
-                    id="panel1-header"
-                  >
-                    <Typography>{data.day}</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography className="details">
-                      {data.details}
 
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                  >
-                    <Typography >{data.d2}</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography className="details2">
-                      {data.details2}
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                <Accordion>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2-content"
-                    id="panel2-header"
-                  >
-                    <Typography>{data.d3}</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography className="details3">
-                      {data.details3}
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              </div>
+            <h3>{data.placename}</h3>
+
+            <div className="image">
+              <img src={packdetails.import} alt="" />
+              {/* <img src={pic1} alt="" /> */}
+
             </div>
-          ))}
-        </div>
+            <h3>Overview</h3>
+            <p id="content">{data.packagedescription}</p>
+            <div className="infor">
+              <h5>More Details</h5>
+
+
+              <div className="inputs">
+                <div className="box">
+                  <Accordion
+                    expanded={expanded}
+                    onChange={handleExpansion}
+                    slots={{ transition: Fade }}
+                    slotProps={{ transition: { timeout: 400 } }}
+                    sx={{
+                      '& .MuiAccordion-region': { height: expanded ? 'auto' : 0 },
+                      '& .MuiAccordionDetails-root': { display: expanded ? 'block' : 'none' },
+                    }}
+                  >
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel1-content"
+                      id="panel1-header"
+                    >
+                      <Typography>{data.day}</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography className="details">
+                        {data.details}
+
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel2-content"
+                      id="panel2-header"
+                    >
+                      <Typography >{data.d2}</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography className="details2">
+                        {data.details2}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                  <Accordion>
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls="panel2-content"
+                      id="panel2-header"
+                    >
+                      <Typography>{data.d3}</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography className="details3">
+                        {data.details3}
+                      </Typography>
+                    </AccordionDetails>
+                  </Accordion>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        ))}
 
       </div>
       <SimpleDialog

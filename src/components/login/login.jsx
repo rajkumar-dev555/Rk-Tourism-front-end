@@ -39,9 +39,10 @@ function Login() {
 
 
     // const axios = require("http-localhost:3001/")
-    const response = await axios.post("http://localhost:3001/login",signup)
+    // const response = await axios.post("http://localhost:5000/login",signup)
     
-    console.log(response.data);
+    // console.log(response.data);
+   
     }
    
        

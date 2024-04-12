@@ -72,7 +72,7 @@ export const Form = (props) => {
         // // .catch(err=>console.log(err))
 
 
-        const response = await axios.post("http://localhost:3001/", signup)
+        const response = await axios.post("http://localhost:5000/", signup)
         console.log(response.data);
         // navigate("/login")
         handleLogin()
