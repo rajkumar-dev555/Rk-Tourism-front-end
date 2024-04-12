@@ -37,22 +37,24 @@ export const Offer = () => {
     setOpen(false);
   };
 
-  const [packdetails, setPackdetails] = useState([]);
+  const [travels, settravel] = useState([]);
 
+  
   useEffect(() => {
     fetchData();
   }, [])
-
   const fetchData = async () => {
 
     try {
       const response = await axios.get("http://localhost:5000/atp");
       console.log(response.data)
-      setPackdetails(...response.data)
+      settravel([...response.data])
     } catch (error) {
       console.error("Error fetching Data", error);
     }
   }
+
+  
 
   // const data = [
   //   {
@@ -89,7 +91,7 @@ export const Offer = () => {
   //     d3: "Day 3 : London- Sightseeing",
   //     details3: " Take your breakfast in the morning. Proceed to visit the Windsor Castle and Stonehenge and Bath - England's most beautiful Georgian city. In this full day tour, you will be taken to the entrance to Windsor Castle, and the home of the Royal Family. It is considered to be the longest- occupied castle. Ensure to check out the lavishly decorated 19th century State Apartments, the 15th century St. George's Chapel and its fortified walls."
   //   }
-  //  ]
+  // //  ]
   const state = useLocation();
   console.log(state.state);
   // const [myData, setMyDate] = useState(data[state.state]);
@@ -108,17 +110,17 @@ export const Offer = () => {
       </div>
 
       <div className="pic">
-        {packdetails.map((data, index) => (
+        {travels.map((data, index) => (
 
-          <div className="database" elevation={3} key={index}>
-
+          <div className="database" elevation={3} key={index}  >
+                       {/* elevation={3} key={index} */}
             {/* {packdetails.map((data, index) => ())} */}
 
 
             <h3>{data.placename}</h3>
 
             <div className="image">
-              <img src={packdetails.import} alt="" />
+              <img src={travels.import} alt="" />
               {/* <img src={pic1} alt="" /> */}
 
             </div>
@@ -145,11 +147,11 @@ export const Offer = () => {
                       aria-controls="panel1-content"
                       id="panel1-header"
                     >
-                      <Typography>{data.day}</Typography>
+                      <Typography>{data.content.day}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="details">
-                        {data.details}
+                        {data.content.details}
 
                       </Typography>
                     </AccordionDetails>
@@ -160,11 +162,11 @@ export const Offer = () => {
                       aria-controls="panel2-content"
                       id="panel2-header"
                     >
-                      <Typography >{data.d2}</Typography>
+                      <Typography >{data.content.d2}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="details2">
-                        {data.details2}
+                        {data.content.details2}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -174,11 +176,11 @@ export const Offer = () => {
                       aria-controls="panel2-content"
                       id="panel2-header"
                     >
-                      <Typography>{data.d3}</Typography>
+                      <Typography>{data.content.d3}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography className="details3">
-                        {data.details3}
+                        {data.content.details3}
                       </Typography>
                     </AccordionDetails>
                   </Accordion>

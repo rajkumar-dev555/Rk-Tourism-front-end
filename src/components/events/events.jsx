@@ -10,7 +10,7 @@ import axios from "axios"
 
 export const Events = () => {
 
- const [packageinformaction, setpackageinformaction]=useState({});
+ const [packageinformaction, setpackageinformaction]=useState([]);
 
    useEffect(()=>{
     fetchData();
@@ -21,7 +21,7 @@ export const Events = () => {
     try{
         const response = await axios.get("http://localhost:3001/packageid/{id}");
         console.log(response.data);
-        setpackageinformaction(...response.data)
+        setpackageinformaction([...response.data])
     } catch (errors) {
         console.error();
     }

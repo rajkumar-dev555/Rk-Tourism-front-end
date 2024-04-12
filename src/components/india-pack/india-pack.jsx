@@ -7,32 +7,74 @@ import pic3 from "../img/South-India.jpg"
 import pic4 from "../img/East-India.jpg"
 
 
-import pic5 from "../img/Agra-tajmahal.jpg"
+import pic5 from "../img/Agra-tajmahal.jpg" 
+import pic6 from "../img/Munnar-kochin.jpg"
+import pic7 from "../img/Meenakshiamman.jpg"
+import pic8 from "../img/Backwaters-kerala.jpg"
 
 import "./india-pack.scss"
 import { Paper } from "@mui/material"
 import Footer from "../footer/footer"
+import { useLocation, useState} from "react"
 // import { Tour } from "@mui/icons-material"
 
 export const IndiaPackages = () => {
 
     const indiandata = [
         {
+            id:0,
             image: pic2,
             name: "North Indian Tours",
             Tours: "21 Tours"
         },
         {
+            id:1,
             image: pic3,
             name: "Soth Indian Tours",
             Tours: "26 Tours"
         },
         {
+            id:2,
             image: pic4,
             name: "East Indian Tours",
             Tours: "8 Tours"
         }
     ]
+    
+    // const state = useLocation();
+    // console.log(state.state);
+    
+
+    const  localdata=[
+        {  
+            //   id:0,
+             image:pic5,
+             name:"tai mahal"
+        },
+        {
+
+            // id:1,
+            image:pic6,
+            name:"Kochin-munnar"
+        },
+        {
+
+            // id:2,
+            image:pic7,
+            name:"meenakshiamman-TamilNadu"
+        },
+        {
+
+            // id:3,
+            image:pic8,
+            name:"Backwaters-Kerala"
+        }
+
+    ]
+
+    // const state = useLocation();
+    // console.log(state.state);
+    // const [myData, setMyDate] = useState(data[state.state]);
 
 
     return (
@@ -50,7 +92,7 @@ export const IndiaPackages = () => {
             <div className="indian-lay">
                 {indiandata.map((data, index) => (
 
-                    <div className="indian-tours">
+                    <div className="indian-tours" elevation={3} key={index}>
 
                         <img src={data.image} alt="" />
                         <h3>{data.name}</h3>
@@ -70,15 +112,18 @@ export const IndiaPackages = () => {
 
 
                 <div className="local-layout">
+                  {localdata.map((data, index)=>(
 
-                    <Paper className="Local-packages">
-                        <img src={pic5} alt=""    width="100%" />
+                    <Paper className="Local-packages" elevation={4} key={index}>
+                        <img src={data.image} alt=""    width="100%" />
 
                         <div className="local-informaction">
-                             <p>Agra</p>
+                             <p>{data.name}</p>
                         </div>
 
                     </Paper>
+                  ))}
+                    
                 </div>
             </div>
 

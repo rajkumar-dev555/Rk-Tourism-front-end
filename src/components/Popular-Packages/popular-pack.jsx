@@ -4,8 +4,9 @@ import pic2 from "../img/Honeymoon-Packages.jpg"
 import pic3 from "../img/Europe-tour-package-.webp"
 import pic4 from "../img/Educational-Tour-.webp"
 
-import { Paper } from "@mui/material"
+// import { Paper } from "@mui/material"
 import { Link } from "react-router-dom"
+// import  { useLocation} from "react"
 import "./papular-pack.scss"
 
 export const Popularpack = () => {
@@ -44,6 +45,8 @@ export const Popularpack = () => {
        
 
     ]
+    // const state = useLocation();
+    // console.log(state.state);
 
 
     return (

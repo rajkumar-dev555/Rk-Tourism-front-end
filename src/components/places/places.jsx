@@ -53,6 +53,7 @@ function Turiousm() {
           <h1>Tourist places</h1>
 
         </div>
+
         <div className="button-div">
 
           <Link to="/allpackage"><button>Explore all Package</button></Link>

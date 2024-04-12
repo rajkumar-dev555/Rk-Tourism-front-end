@@ -31,7 +31,7 @@ function Navbar() {
       <p>Travel Essentails</p>
       <p>Profile</p>
       <p  onClick={handleOpen}>Login</p>
-       <p onClick={handleOpen}>Register</p>
+       {/* <p onClick={handleOpen}>Register</p> */}
       {/* <h3>Login</h3>           
           <h3>Register</h3> */}
 

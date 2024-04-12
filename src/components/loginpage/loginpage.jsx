@@ -33,6 +33,7 @@ export const Loginpage = (props) => {
         console.log(signup);
         const response = await axios.post("http://localhost:5000/login", signup)
         console.log(response.data)
+        // navigate("/")
     }
 
 

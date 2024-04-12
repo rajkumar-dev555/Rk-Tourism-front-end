@@ -12,12 +12,16 @@
         color: white;
         text-align: center;
         padding: 18%;
+          
 
+        h1{
+            font-size: 60px;
+        }
     }
 
     .indian-lay {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto ;
         justify-content: center;
         gap: 15px;
         padding-top: 30px;
@@ -52,11 +56,21 @@
         }
     }
 
-    .local-layout{
-        
-        .Local-packages{
-            
-            width: 300px;
+    
+    .local-tours{
+        padding-top: 20px;
+        .local-layout{
+            margin-top: 35px;
+             display: grid;
+             grid-template-columns: auto auto auto auto;
+             gap: 10px;
+            //  padding:  40px;
+             padding-left: 55px;
+            .Local-packages{
+                
+                width: 300px;
+            }
+    
         }
 
     }
